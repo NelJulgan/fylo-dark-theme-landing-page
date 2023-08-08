@@ -1,0 +1,138 @@
+footer {
+  background: $dark-blue-footer;
+
+  .footer-content {
+    display: grid;
+    margin-top: 20rem;
+    grid-template-columns: 1fr;
+
+    column-gap: 0;
+    row-gap: 20px;
+    grid-template-areas:
+      'logo'
+      'location'
+      'contact'
+      'links'
+      'contact-links'
+      'social-icons';
+  }
+  .footer-logo {
+    grid-area: logo;
+    margin-bottom: 35px;
+
+    img {
+      width: 150px;
+    }
+  }
+
+  .footer-location {
+    grid-area: location;
+    display: grid;
+    grid-template-columns: 2% 97%;
+
+    span {
+      padding-left: 35px;
+    }
+  }
+  .footer-contact {
+    grid-area: contact;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+
+    p {
+      margin-bottom: 26px;
+    }
+    img {
+      margin-right: 24px;
+    }
+  }
+  .footer-links {
+    grid-area: links;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 4rem;
+
+    a {
+      margin-bottom: 16px;
+      color: $white-70;
+      font-size: 16px;
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+  .footer-contact-links {
+    grid-area: contact-links;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 4rem;
+    a {
+      color: $white-70;
+      font-size: 16px;
+      margin-bottom: 16px;
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+  .social-icons {
+    grid-area: social-icons;
+
+    .social-icons-link {
+      font-size: 1.4rem;
+      display: flex;
+      justify-content: center;
+      gap: 1.8rem;
+      margin-top: 8rem;
+
+      .fa-facebook-f {
+        padding: 10px 13px;
+      }
+
+      i {
+        padding: 10px 10px;
+        border: $white solid 1px;
+        border-radius: 50px;
+        color: $white-70;
+
+        &:hover {
+          border: $cyan solid 1px;
+          color: $cyan;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  footer {
+    .container {
+      padding: 7.3rem 6rem 0 6rem;
+    }
+    .footer-content {
+      margin-top: 9rem;
+      padding-bottom: 0;
+      grid-template-columns: 4fr 3fr 1fr 1fr 2fr;
+      grid-template-rows: auto;
+      column-gap: 4rem;
+      grid-template-areas:
+        'logo . . . .'
+        'location  contact links contact-links social-icons';
+    }
+
+    .footer-contact {
+      margin-top: 0;
+    }
+    .footer-links {
+      margin-top: 0;
+    }
+    .footer-contact-links {
+      margin-top: 0;
+    }
+    .social-icons {
+      .social-icons-link {
+        margin-top: 0;
+      }
+    }
+  }
+}

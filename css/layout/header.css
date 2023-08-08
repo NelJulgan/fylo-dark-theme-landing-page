@@ -1,0 +1,46 @@
+@import '/css/abstract/index.css';
+
+header {
+  background-color: $dark-blue-intro;
+
+  .nav {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    img {
+      width: 70%;
+    }
+
+    .nav-list {
+      display: flex;
+      align-items: center;
+
+      & :not(:last-child) {
+        padding-right: 2rem;
+      }
+
+      a {
+        color: $white-70;
+        transition: $transition;
+        &:hover {
+          color: $white;
+          border-bottom: solid 1px $white;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  header {
+    .nav {
+      .nav-list {
+        & :not(:last-child) {
+          padding-right: 5.6rem;
+        }
+      }
+    }
+  }
+}

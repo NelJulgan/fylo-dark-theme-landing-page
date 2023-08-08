@@ -1,0 +1,65 @@
+.productive {
+  margin-top: 8rem;
+
+  .productive-works {
+    img {
+      max-width: 100%;
+    }
+    .img-box {
+      display: grid;
+      place-items: center;
+    }
+    .productive-content {
+      h2 {
+        font-size: 1.8rem;
+        font-weight: 700;
+        margin: 3rem 0;
+      }
+      p {
+        font-size: 1.4rem;
+        margin-bottom: 25px;
+      }
+      .link {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        color: $cyan;
+        border-bottom: 1px solid;
+        width: fit-content;
+
+        &:hover {
+          color: $white;
+        }
+
+        &:hover > svg > g > g > use {
+          fill: $white;
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .productive {
+    .productive-works {
+      display: flex;
+      align-items: center;
+
+      gap: 4rem;
+
+      img-box {
+        flex-grow: 1;
+      }
+
+      .productive-content {
+        h2 {
+          font-size: 4rem;
+        }
+        p {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
