@@ -1,0 +1,12 @@
+@import './abstract/index.css';
+
+body {
+  font-family: $openSans;
+  font-weight: 400;
+  font-size: 14px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  color: $white;
+  background: $dark-blue-main;
+  overflow-x: hidden;
+}

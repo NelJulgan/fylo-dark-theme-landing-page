@@ -1,0 +1,33 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: $white;
+}
+main {
+  position: relative;
+  padding-bottom: 200px;
+}
+
+@media (max-width: 375px) {
+  html {
+    font-size: 10px;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+}

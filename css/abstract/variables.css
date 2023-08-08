@@ -1,0 +1,43 @@
+$dark-blue-intro: hsl(217, 28%, 15%);
+$dark-blue-main: hsl(218, 28%, 13%);
+$dark-blue-footer: hsl(216, 53%, 9%);
+$dark-blue-testimonial: hsl(219, 30%, 18%);
+
+$cyan: hsl(176, 68%, 64%);
+$blue: hsl(198, 60%, 50%);
+$red: hsl(0, 100%, 63%);
+
+$white: hsl(0, 0%, 100%);
+$white-70: hsl(0, 0%, 70%);
+
+$transition: all 300ms ease;
+
+h1,
+h2,
+h3,
+nav,
+.cta {
+  font-family: $raleway;
+  font-weight: 700;
+}
+
+.container {
+  padding: 3rem 2rem;
+}
+@media (min-width: 768px) {
+  .container {
+    padding: 4rem 3rem;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    margin: 0 auto;
+    padding: 73px 80px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
+}
